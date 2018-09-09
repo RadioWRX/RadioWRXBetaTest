@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img class="logo" src="assets/imgs/logo.png" alt="Ionic Framework logo">
+  <div class="login">
+    <h1 text-center>RadioWRX</h1>
+    <h4 text-center>Your Band. Your Music.</h4>
+    <h4 text-center>Everywhere.</h4>
+    <form [formGroup]="form">
+      <ion-list>
+        <ion-item margin-bottom>
+          <ion-label floating>Email:</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item margin-bottom>
+          <ion-label floating>Password:</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+      </ion-list>
+    </form>
+    <button ion-button color="primary" block (click)="login()" [disabled]="!form.valid">
+Login </button>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <button ion-button block text-center color="primary" (click)="goToSignUp()">Sign Up</button>
+      </ion-col>
+      <ion-col size="6">
+        <button ion-button block text-center color="primary" (click)="goToResetPassword()">Password?</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
