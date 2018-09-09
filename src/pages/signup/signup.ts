@@ -74,7 +74,7 @@ export class SignupPage {
   }
 
   goToResetPassword() {
-    this.navCtrl.push(ResetPasswordPage);
+    this.navCtrl.setRoot(ResetPasswordPage);
   }
 
   ionViewDidLoad() {

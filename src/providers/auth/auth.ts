@@ -62,6 +62,11 @@ export class AuthProvider {
       });
   }
 
+  //Allow user to reset password
+  resetPassword(email: string): Promise<void> {
+    return firebase.auth().sendPasswordResetEmail(email);
+  }
+
   //Logout existing user
   logOut(): Promise<any> {
     return new Promise((resolve, reject) => {

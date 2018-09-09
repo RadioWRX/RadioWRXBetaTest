@@ -47,11 +47,11 @@ export class LoginPage {
   }
 
   goToSignUp() {
-    this.navCtrl.push(SignupPage);
+    this.navCtrl.setRoot(SignupPage);
   }
 
   goToResetPassword() {
-    this.navCtrl.push(ResetPasswordPage);
+    this.navCtrl.setRoot(ResetPasswordPage);
   }
 
   ionViewDidLoad() {
