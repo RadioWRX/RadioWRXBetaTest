@@ -6,8 +6,8 @@ import { Observable } from 'rxjs/Observable';
 
 import firebase from 'firebase';
 import { environment } from '../environments/environments';
-import { AuthProvider } from '../providers/auth/auth';
-import { AngularFireAuth } from 'angularfire2/auth';
+//import { AuthProvider } from '../providers/auth/auth';
+//import { AngularFireAuth } from 'angularfire2/auth';
 
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';

@@ -7,6 +7,7 @@ import { AuthProvider } from '../../providers/auth/auth';
 import { TabsPage } from '../tabs/tabs';
 import { SignupPage } from '../signup/signup';
 import { ResetPasswordPage } from '../reset-password/reset-password';
+//import { HomePage } from '../home/home';
 /**
  * Generated class for the LoginPage page.
  *

@@ -11,11 +11,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+import { ProfilePage } from '../pages/profile/profile';
+import { EditProfilePage } from '../pages/edit-profile/edit-profile';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthProvider } from '../providers/auth/auth';
+import { ProfileProvider } from '../providers/profile/profile';
 
 
 @NgModule({
@@ -27,7 +30,9 @@ import { AuthProvider } from '../providers/auth/auth';
     TabsPage,
     LoginPage,
     SignupPage,
-    ResetPasswordPage
+    ResetPasswordPage,
+    ProfilePage,
+    EditProfilePage
   ],
   imports: [
     BrowserModule,
@@ -43,13 +48,17 @@ import { AuthProvider } from '../providers/auth/auth';
     TabsPage,
     LoginPage,
     SignupPage,
-    ResetPasswordPage
+    ResetPasswordPage,
+    ProfilePage,
+    EditProfilePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthProvider
+    AuthProvider,
+    ProfileProvider,
+    ProfileProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
